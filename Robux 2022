@@ -1,0 +1,44 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+
+
+function Script()
+    local Window = Library.CreateLib("DevSR | Real Robux Gui | Work Only In Pls Doante")
+
+
+
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+
+    -- Script
+
+    MainSection:NewSlider("Walkspeed", "Changes how fast you walk.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    MainSection:NewButton("Click Me You Get 1201 Robux!!", "I see it working -100% (:", function() -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer:Kick("Pls Check Pending Robux DevSR sending you 1201 Robux")
+    end)
+
+    MainSection:NewButton("Click Me You Get Premium 1 Year!!", "I see it working -9999% (:", function()
+        game.Players.LocalPlayer:Kick("Only fools choose this Fucking")
+    end)
+
+
+    -- Credits
+
+
+    local Credits = Window:NewTab("Credits")
+    local CreditsSection = Credits:NewSection("Credits")
+
+
+    CreditsSection:NewLabel("Created by DevSR It Real Lol")
+    
+
+
+end
+
+if game.PlaceId == 8737602449 then
+    Script()
+end
